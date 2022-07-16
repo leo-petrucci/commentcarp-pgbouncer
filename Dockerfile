@@ -9,6 +9,4 @@ ENV PGBOUNCER_SERVER_TLS_SSLMODE=require
 ENV PGBOUNCER_SERVER_TLS_PROTOCOLS=secure
 ENV POSTGRESQL_PORT=7572
 
-RUN cat /etc/os-release
-RUN lsb_release -a
-RUN hostnamectl
+RUN cat /etc/services
