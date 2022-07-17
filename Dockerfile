@@ -9,6 +9,9 @@ ENV PGBOUNCER_SERVER_TLS_SSLMODE=require
 ENV PGBOUNCER_SERVER_TLS_PROTOCOLS=secure
 ENV POSTGRESQL_PORT=7572
 
+RUN apt-get update && \
+      apt-get -y install sudo
+
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 
 USER docker
