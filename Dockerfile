@@ -9,5 +9,5 @@ ENV PGBOUNCER_SERVER_TLS_SSLMODE=require
 ENV PGBOUNCER_SERVER_TLS_PROTOCOLS=secure
 ENV POSTGRESQL_PORT=7572
 
-RUN echo "[pgbouncer]\nlisten_port = 6432" > ./pgbouncer.ini
-RUN cat ./pgbouncer.ini
+RUN echo "[pgbouncer]\nlisten_port = 6432" > ~/pgbouncer.ini
+RUN cat ~/pgbouncer.ini
