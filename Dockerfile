@@ -2,6 +2,7 @@ FROM bitnami/pgbouncer
 
 ENV POSTGRESQL_HOST=containers-us-west-76.railway.app
 ENV POSTGRESQL_USERNAME=postgres
+ENV PGBOUNCER_AUTH_USER=postgres
 ENV POSTGRESQL_PASSWORD=Bsnc6mdpHunKfxrKBVoY
 ENV POSTGRESQL_DATABASE=railway
 ENV PGBOUNCER_POOL_MODE=transaction
