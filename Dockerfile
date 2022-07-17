@@ -8,3 +8,5 @@ ENV PGBOUNCER_POOL_MODE=transaction
 ENV POSTGRESQL_PORT=7572
 ENV PGBOUNCER_DATABASE=railway
 ENV PGBOUNCER_EXTRA_FLAGS="--verbose"
+
+RUN cat /opt/bitnami/pgbouncer/conf/userlist.txt
