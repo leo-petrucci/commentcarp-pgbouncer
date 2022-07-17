@@ -9,4 +9,8 @@ ENV PGBOUNCER_SERVER_TLS_SSLMODE=require
 ENV PGBOUNCER_SERVER_TLS_PROTOCOLS=secure
 ENV POSTGRESQL_PORT=7572
 
-RUN ufw allow 1191/tcp
+RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
+
+USER docker
+
+RUN echo testing
